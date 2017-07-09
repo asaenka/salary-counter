@@ -3,64 +3,148 @@
 <head>
   <title>Salary</title>
   <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body>
-  <div class= "counter-body">
-    <div class="counter-body__header">
-      <header class="header-main">
-        <div class="header-main__title">My students</div>
-      </header>
+  <div class="counter-body">
+    <table class="students">
+      <thead>
+        <tr class="students-header-row">
+          <td class="students-header-row__title">My students</td>
+          <td>Price per lesson</td>
+          <td>Lessons per week</td>
+          <td>Attendance</td>
+          <td>Weekly income</td>
+        </tr>
+      </thead>
 
-      <div class="counter-criterias">
-        <ul>
-          <li class="counter-criterias__criteria">Price per lesson</li>
-          <li class="counter-criterias__criteria">Lessons per week"</li>
-          <li class="counter-criterias__criteria">Attendance</li>
-          <li class="counter-criterias__criteria">Weekly income</li>
-        </ul>
+      <tbody>
+        <tr class="student-row">
+          <td class="student-row__name">Alex</td>
+          <td class="student-row__lesson-price">
+            <div class="input-cell input-cell--price" contenteditable="true">
+              1200
+            </div>
+          </td>
+          <td class="student-row__lessons-per-week">
+            <div class="input-cell" contenteditable="true">
+              2
+            </div>
+          </td>
+          <td class="student-row__attendance">
+            <div class="input-cell input-cell--percentage" contenteditable="true">
+              80
+            </div>
+          </td>
+          <td class="student-row__avg-week-revenue">1920</td>
+        </tr>
+
+        <tr class="student-row">
+          <td class="student-row__name">Olga</td>
+          <td class="student-row__lesson-price">
+            <div class="input-cell input-cell--price" contenteditable="true">
+              1500
+            </div>
+          </td>
+          <td class="student-row__lessons-per-week">
+            <div class="input-cell" contenteditable="true">
+              1
+            </div>
+          </td>
+          <td class="student-row__attendance">
+            <div class="input-cell input-cell--percentage" contenteditable="true">
+            90
+            </div>
+          </td>
+          <td class="student-row__avg-week-revenue">1920</td>
+        </tr>
+
+        <tr class="student-row">
+          <td class="student-row__name">Varvara</td>
+          <td class="student-row__lesson-price">
+            <div class="input-cell input-cell--price" contenteditable="true">
+              1500
+            </div>
+          </td>
+          <td class="student-row__lessons-per-week">
+            <div class="input-cell" contenteditable="true">
+              2
+            </div>
+          </td>
+          <td class="student-row__attendance">
+            <div class="input-cell input-cell--percentage" contenteditable="true">
+              80
+            </div>
+          </td>
+          <td class="student-row__avg-week-revenue">1920</td>
+        </tr>
+
+        <tr class="student-row">
+          <td class="student-row__name">Lilia</td>
+          <td class="student-row__lesson-price">
+            <div class="input-cell input-cell--price" contenteditable="true">
+              1000
+            </div>
+          </td>
+          <td class="student-row__lessons-per-week">
+            <div class="input-cell" contenteditable="true">
+              3
+            </div>
+          </td>
+          <td class="student-row__attendance">
+            <div class="input-cell input-cell--percentage" contenteditable="true">
+              90
+            </div>
+          </td>
+          <td class="student-row__avg-week-revenue">2700</td>
+        </tr>
+
+        <tr class="student-row">
+          <td class="student-row__name">Yurij</td>
+          <td class="student-row__lesson-price">
+            <div class="input-cell input-cell--price" contenteditable="true">
+              1500
+            </div>
+          </td>
+          <td class="student-row__lessons-per-week">
+            <div class="input-cell" contenteditable="true">
+              1
+            </div>
+          </td>
+          <td class="student-row__attendance">
+             <div class="input-cell input-cell--percentage" contenteditable="true">
+              100
+             </div>
+          </td>
+          <td class="student-row__avg-week-revenue">1500</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <div class="income-changes">
+      <div class="current-state">
+        <div class="current-state__title">Now</div>
+        <div class="current-state__income">≈21140 /week</div>
+        <div class="current-state__summary">11 students, 20 lessons per week planned, =16 in fact</div>
+      </div>
+
+      <div class="goal">
+        <div class="goal__title">Goal</div>
+        <div class="goal__income" contenteditable="true">
+          30000
+        </div>
+        <div class="goal__planning"> Need to find 4 more students and plan 6 more lessons per week</div>
       </div>
     </div>
+</div>
 
-    <div class="student-examples">
-     <ol>
-      <li class="student-example__name">Alex</li>
-      <div class="student-example__payment">1200</div>
-      <div class="student-example__lessons">2</div>
-      <div class="student-example__attendance">80%</div>
-      <div class="student-example__income">1920</div>
-
-      <li class="student-example__name">Olga</li>
-      <div class="student-example__payment">1500</div>
-      <div class="student-example__lessons">1</div>
-      <div class="student-example__attendance">90%</div>
-      <div class="student-example__income">1920</div>
-
-      <li class="student-example__name">Varvara</li>
-      <div class="student-example__payment">1500</div>
-      <div class="student-example__lessons">2</div>
-      <div class="student-example__attendance">80%</div>
-      <div class="student-example__income">1920</div>
-      </ol>
-    </div>
-
-    <div class="current-state">
-      <div class="current-state__title">Now</div>
-      <div class="current-state__income"> 21140</div>
-      <div class="current-state__summary">11 students, 20 lessons per week planned, =16 in fact</div>
-    </div>
-
-    <div class="goal">
-      <div class="goal__title">Goal</div>
-      <div class="goal__income">30000/week</div>
-      <div class="goal__planning"> Need to find 4 more students and plan 6 more lessons per week</div>
-    </div>
-
-    <div class="footer-button">
-      <img src="resources/images/rectangle.png">
-    </div>
-
-
+  <div class="button-footer">
+    <button class="w3-button w3-black w3-round">
+      + New Student
+    </button>
+  </div>
 
 </body>
 </html>

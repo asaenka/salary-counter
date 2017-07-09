@@ -1,4 +1,128 @@
-.img {
-  height:48px;
-  width: 162px;
+html {
+  box-sizing: border-box;
 }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #EEEEEF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.counter-body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.students {
+  border-collapse: collapse;
+}
+
+
+.student-row td.student-row__name {
+  text-align: left;
+}
+
+.student-row td {
+  padding: 8px 0;
+
+  text-align: center;
+}
+
+.students-header-row {
+  vertical-align: bottom;
+
+  border-bottom: 2px solid #000;
+}
+
+.students-header-row td {
+  padding-bottom: 8px;
+}
+
+.students-header-row td + td {
+  padding-left: 20px;
+}
+
+.students-header-row__title {
+  font-size: 32px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.input-cell:focus {
+  display: inline-block;
+
+  border-bottom: 1px solid #C4C4C4;
+
+  outline: none;
+}
+
+.input-cell--price:after {
+  content: " RUR";
+}
+
+.input-cell--percentage:after {
+  content: "%";
+}
+
+.goal,
+.current-state {
+  width: 250px;
+}
+
+.current-state {
+  margin-bottom: 66px;
+}
+
+.current-state__title,
+.goal__title {
+  width: 200px;
+  padding: 1px 0 8px;
+
+  font-size: 32px;
+  line-height: 32px;
+  border-bottom: 2px solid black;
+}
+
+
+.current-state__income {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.goal__income:after {
+  content: " /week";
+}
+
+.goal__income {
+  display: inline-block;
+
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.goal__income:focus {
+  border-bottom: 1px solid #C4C4C4;
+
+  outline: none;
+}
+
+.w3-button,
+.w3-black,
+.w3-round {
+  height: 48px;
+  width: 162px;
+
+  background-color: #14AABE;
+  margin-top: 35px;
+}
+
+.button-text {
+  color: white;
+  padding-top: 15px;
+  text-align: center;
+
+}
+
